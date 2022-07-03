@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:./db/paydb;MODE=MySQL #;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update #DB 테이블과 엔티티 매핑정보를 비교해 변경 사항만 수정
+    show-sql: true
+    defer-datasource-initialization: true #hibernate을 db보다 먼저 시작
+  sql:
+    init:
+      mode: always
+      encoding: utf-8
+
+feign:
+  callurl: 'https://73b735b8-ddc7-463f-bd96-5f9702c29503.mock.pstmn.io'
