@@ -19,7 +19,7 @@
 ### 공통 Response 구조
 
 성공 응답   
-```
+```json
 {
     "resultCode": 200,
     "message": "SUCCESS",
@@ -28,7 +28,7 @@
 ```
 
 에러 응답 
-```
+```json
 {
     "resultCode": 500,
     "message": "에러 메시지",
@@ -48,7 +48,7 @@
 	* Body : 빈값  
 
 * Response
-```
+```json
 {
     "resultCode": 200,
     "message": "SUCCESS",
@@ -88,7 +88,7 @@
 	* HTTP Method : POST  
 	* Body : id(사용자ID), points(충전할 포인트)
 
-```
+```json
 {
     "id":2,
     "points" : 1000
@@ -98,7 +98,7 @@
 
 * Response
 : 충전 후 보유한 포인트 정보를 리턴합니다.
-```
+```json
 {
     "resultCode": 200,
     "message": "SUCCESS",
@@ -124,7 +124,7 @@
 	* HTTP Method : POST  
 	* Body : orderUserId(사용자ID), menuId(메뉴ID)
 
-```
+```json
 {
     "orderUserId":2,
     "menuId" : 1
@@ -133,7 +133,7 @@
 
 * Response
 : 주문/결제 진행 후 주문 정보를 리턴  
-```
+```json
 {
     "resultCode": 200,
     "message": "SUCCESS",
@@ -148,7 +148,7 @@
 
 * Error
 : 사용자가 보유한 포인트가 결제금액보다 부족한 경우 결과  
-```
+```json
 {
     "resultCode": 500,
     "message": "소지한 포인트가 부족합니다.",
@@ -167,7 +167,7 @@
 
 
 * Response
-```
+```json
 {
     "resultCode": 200,
     "message": "SUCCESS",
