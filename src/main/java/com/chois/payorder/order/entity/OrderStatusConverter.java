@@ -1,4 +1,4 @@
-package kr.co.programmers.order.orders.domain;
+package com.chois.payorder.order.entity;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
